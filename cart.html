@@ -11,7 +11,6 @@
 <body>
     <section id="header">
         <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
-    
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
@@ -19,22 +18,90 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
+                <li><a href="#" class="active"><i class="far fa-shopping-bag"></i></a><span>0</span></li>
+                <a href="" id="close"><i class="far fa-times" onclick="tog()"></i></a>
             </ul>
         </div>
         <div id="mobile">
             <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
+            <i id="bar" class="fas fa-outdent" onclick="tog()"></i>
         </div>
     </section>
     
     <section id="page-header" class="about-header">
-        <h2>#let's_talk</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2>Your Cart</h2>
+        <p>Let's Get You Cleared Up and Ready To Go</p>
     </section>
 
+    <section class="cart" id="cart">
+        <div class="cards">
+            <div class="card">
+                <div class="img">
+                    <img src="img/products/f1.jpg" alt="Image" >
+                </div>
+                <h3>White Gucci Bag</h3>
+                <p>This is a White Gucci Bag</p>
+                <p>Price : $60</p>
+                <p>Click on <a href="confirm.html">Confirm</a>To Continue Or Click on <a href="#">Cancel </a>to remove Item</p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/products/f2.jpg" alt="Image" >
+                </div>
+                <h3>White Gucci Bag</h3>
+                <p>This is a White Gucci Bag</p>
+                <p>Price : $60</p>
+                <p>Click on <a href="confirm.html">Confirm</a>To Continue Or Click on <a href="#">Cancel </a>to remove Item</p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/products/f3.jpg" alt="Image" >
+                </div>
+                <h3>White Gucci Bag</h3>
+                <p>This is a White Gucci Bag</p>
+                <p>Price : $60</p>
+                <p>Click on <a href="confirm.html">Confirm</a>To Continue Or Click on <a href="#">Cancel </a>to remove Item</p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/products/f8.jpg" alt="Image" >
+                </div>
+                <h3>White Gucci Bag</h3>
+                <p>This is a White Gucci Bag</p>
+                <p>Price : $60</p>
+                <p>Click on <a href="confirm.html">Confirm</a>To Continue Or Click on <a href="#">Cancel </a>to remove Item</p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/products/f8.jpg" alt="Image" >
+                </div>
+                <h3>White Gucci Bag</h3>
+                <p>This is a White Gucci Bag</p>
+                <p>Price : $60</p>
+                <p>Click on <a href="confirm.html">Confirm</a>To Continue Or Click on <a href="#">Cancel </a>to remove Item</p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/products/f8.jpg" alt="Image" >
+                </div>
+                <h3>White Gucci Bag</h3>
+                <p>This is a White Gucci Bag</p>
+                <p>Price : $60</p>
+                <p>Click on <a href="confirm.html">Confirm</a>To Continue Or Click on <a href="#">Cancel </a>to remove Item</p>
+            </div>
+    </section>
 
+    
+    <section id="newsletter" class="section-p1 section-m1">
+
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get Email updates about our latest shops and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address"><button class="normal">Sign Up</button>
+        </div>
+    </section>
 
     <footer class="section-p1">
         <div id="col">
@@ -67,9 +134,9 @@
         <div class="col">
             <h4>My Account</h4>
             <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track my Order</a>
+            <a href="cart.html">View Cart</a>
+            <a href="cart.html">My Wishlist</a>
+            <a href="cart.html">Track my Order</a>
             <a href="contact.html">Help</a>
         </div>
 
