@@ -19,12 +19,12 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a><span class="span">0</span></li>
+                <a href="" id="close"><i class="far fa-times" onclick="tog()"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
+            <i id="bar" class="fas fa-outdent" onclick="tog()"></i>
         </div>
     </section>
     
@@ -368,5 +368,24 @@
 
     </footer>
     <script src="app.js"></script>
+    <script>
+        const page1 = document.getElementById("pg1");
+        const page2 = document.getElementById("pg2");
+
+
+        page1.onclick = ()=>{
+            page1.classList.add("active");
+            page2.classList.remove("active");
+        }
+
+        page2.onclick = ()=>{
+            page1.classList.remove("active");
+            page2.classList.add("active");
+        }
+
+        cont.onclick = ()=>{
+            page1.classList.remove("active");
+            page2.classList.add("active");}
+    </script>
 </body>
 </html>
